@@ -1,0 +1,67 @@
+
+// Media Queries Sreens
+
+@mixin xs {
+ @media (min-width: #{$screen-xs-min}) {
+   @content;
+ }
+}
+
+// Small devices and large devices
+@mixin xsm {
+ @media (min-width: #{$screen-xsm-min}) {
+   @content;
+ }
+}
+
+// Large devices
+@mixin sm {
+ @media (min-width: #{$screen-sm-min}) {
+   @content;
+ }
+}
+
+
+// Medium devices
+@mixin md-max {
+ @media (max-width: #{$screen-md-min}) {
+   @content;
+ }
+}
+
+// Large devices
+@mixin lg {
+ @media (min-width: #{$screen-lg-min}) {
+   @content;
+ }
+}
+
+// Extra large devices
+@mixin xl {
+ @media (min-width: #{$screen-xl-min}) {
+   @content;
+ }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+ @media (min-width: $screen+'px') {
+   @content;
+ }
+}
+
+// Default Fonts Mixins
+
+@mixin font ($size: false, $colour: false, $weight: false,  $lh: false) {
+  font-family: 'sans-serif'; // Add font name
+  @if $size { font-size: $size; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+
+// Flex Mixins
+
+@mixin bg {
+  // Add mixin
+}
